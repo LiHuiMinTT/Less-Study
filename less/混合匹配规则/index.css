@@ -1,0 +1,7 @@
+.triL {
+  width: 0;
+  height: 0;
+  border: solid;
+  border: 20px;
+  border-color: transparent transparent transparent red;
+}

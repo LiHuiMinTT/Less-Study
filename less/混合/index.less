@@ -1,0 +1,36 @@
+//有输出的混合，该混合也会被带到css中
+.code{
+    background-color: red;
+    font-size: 50%;
+    border: 2px solid green;
+}
+// 不带输出混合，该混合不会带到css
+.newcode(){
+    display: none;
+}
+//带参数的混合 //不是函数！！
+.nnewcode(@w,@h){
+    width: @w;
+    height: @h;
+}
+//带参数的有默认值的混合 //不是函数！！
+.newcode3(@w:100px,@h:100px){
+    /*默认值混合*/
+    width: @w;
+    height: @h;
+}
+
+body{
+    .code;
+    .newcode;
+    .nnewcode(20px,30px)
+}
+div{
+    .code;
+    .newcode;
+    .newcode3();
+}
+span{
+    /*指定参数取缔默认值的混合调用,非指定的依旧按照默认值*/
+    .newcode3(@h:500px);
+}

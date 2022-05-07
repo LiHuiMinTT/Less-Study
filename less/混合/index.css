@@ -1,0 +1,28 @@
+.code {
+  background-color: red;
+  font-size: 50%;
+  border: 2px solid green;
+}
+body {
+  background-color: red;
+  font-size: 50%;
+  border: 2px solid green;
+  display: none;
+  width: 20px;
+  height: 30px;
+}
+div {
+  background-color: red;
+  font-size: 50%;
+  border: 2px solid green;
+  display: none;
+  /*默认值混合*/
+  width: 100px;
+  height: 100px;
+}
+span {
+  /*指定参数取缔默认值的混合调用,非指定的依旧按照默认值*/
+  /*默认值混合*/
+  width: 100px;
+  height: 500px;
+}

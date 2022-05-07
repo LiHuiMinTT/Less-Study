@@ -1,0 +1,12 @@
+body {
+  background-color: aliceblue;
+}
+body :hover {
+  background-color: aqua;
+}
+body {
+  background-color: aliceblue;
+}
+body:hover {
+  background-color: aqua;
+}
